@@ -36,7 +36,7 @@ public class BlogPostDAO {
 
         // XXX HW 3.2,  Work Here
         // Return a list of DBObjects, each one a post from the posts collection
-        List<Document> posts = null;
+        List<Document> posts = new ArrayList<Document>();//null;
 
         FindIterable<Document> findPosts = postsCollection.find()
                 .sort(new BasicDBObject("date", -1))
